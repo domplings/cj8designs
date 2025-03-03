@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { FaBullseye, FaPalette, FaCogs, FaLaptopCode, FaProjectDiagram, FaHandshake } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -50,32 +51,36 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-2xl font-bold text-gray-900">Discover Our Journey</h3>
           <p className="text-gray-700 mt-2">
-            Meet the Visionaries Behind CJ8 Designs
+        Meet the Visionaries Behind CJ8 Designs
           </p>
           <p className="text-gray-700 mt-2">
-            Our team of dedicated professionals brings a wealth of experience and creativity to every project.
+        Our team of dedicated professionals brings a wealth of experience and creativity to every project.
           </p>
         </div>
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center mt-8">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <Image src="/generic_person.jpg" alt="James Carter" width={96} height={96} className="w-24 h-24 mx-auto rounded-full mb-4" />
+          <h4 className="text-xl font-bold text-gray-900">James Carter</h4>
+          <p className="text-gray-700">Founder & CEO</p>
+          <p className="text-gray-700">New York, USA</p>
+            </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h4 className="text-xl font-bold text-gray-900">James Carter</h4>
-            <p className="text-gray-700">Founder & CEO</p>
-            <p className="text-gray-700">New York, USA</p>
+        <Image src="/generic_person.jpg" alt="Emily Zhang" width={96} height={96} className="w-24 h-24 mx-auto rounded-full mb-4" />
+        <h4 className="text-xl font-bold text-gray-900">Emily Zhang</h4>
+        <p className="text-gray-700">Creative Director</p>
+        <p className="text-gray-700">San Francisco, USA</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h4 className="text-xl font-bold text-gray-900">Emily Zhang</h4>
-            <p className="text-gray-700">Creative Director</p>
-            <p className="text-gray-700">San Francisco, USA</p>
+        <Image src="/generic_person.jpg" alt="Michael Brown" width={96} height={96} className="w-24 h-24 mx-auto rounded-full mb-4" />
+        <h4 className="text-xl font-bold text-gray-900">Michael Brown</h4>
+        <p className="text-gray-700">Senior UX Designer</p>
+        <p className="text-gray-700">London, UK</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h4 className="text-xl font-bold text-gray-900">Michael Brown</h4>
-            <p className="text-gray-700">Senior UX Designer</p>
-            <p className="text-gray-700">London, UK</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h4 className="text-xl font-bold text-gray-900">Laura Smith</h4>
-            <p className="text-gray-700">Marketing Strategist</p>
-            <p className="text-gray-700">Toronto, Canada</p>
+        <Image src="/generic_person.jpg" alt="Laura Smith" width={96} height={96} className="w-24 h-24 mx-auto rounded-full mb-4" />
+        <h4 className="text-xl font-bold text-gray-900">Laura Smith</h4>
+        <p className="text-gray-700">Marketing Strategist</p>
+        <p className="text-gray-700">Toronto, Canada</p>
           </div>
         </div>
       </section>
