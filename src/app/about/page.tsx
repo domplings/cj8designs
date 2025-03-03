@@ -1,6 +1,14 @@
 "use client";
-import { useEffect, useState } from 'react';
-import { FaBullseye, FaPalette, FaCogs, FaLaptopCode, FaProjectDiagram, FaHandshake } from 'react-icons/fa';
+import { useEffect, useState } from "react";
+import {
+  FaBullseye,
+  FaPalette,
+  FaCogs,
+  FaLaptopCode,
+  FaProjectDiagram,
+  FaHandshake,
+} from "react-icons/fa";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -11,7 +19,8 @@ export default function AboutPage() {
             CJ8 Designs - Crafting Excellence in Design
           </h2>
           <p className="text-lg text-gray-600 mt-4">
-            At CJ8 Designs, we blend creativity with precision to deliver innovative solutions that drive success.
+            At CJ8 Designs, we blend creativity with precision to deliver
+            innovative solutions that drive success.
           </p>
         </div>
       </section>
@@ -23,13 +32,16 @@ export default function AboutPage() {
             Empowering Businesses Through Design
           </p>
           <p className="text-gray-700 mt-2">
-            At CJ8 Designs, we are committed to excellence, innovation, and collaboration.
+            At CJ8 Designs, we are committed to excellence, innovation, and
+            collaboration.
           </p>
           <p className="text-gray-700 mt-2">
-            Our mission is to empower businesses with cutting-edge design solutions that inspire and transform.
+            Our mission is to empower businesses with cutting-edge design
+            solutions that inspire and transform.
           </p>
           <p className="text-gray-700 mt-2">
-            We believe in fostering creativity and delivering results that exceed expectations.
+            We believe in fostering creativity and delivering results that
+            exceed expectations.
           </p>
         </div>
       </section>
@@ -48,31 +60,62 @@ export default function AboutPage() {
 
       <section className="bg-gray-100 py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl font-bold text-gray-900">Discover Our Journey</h3>
+          <h3 className="text-2xl font-bold text-gray-900">
+            Discover Our Journey
+          </h3>
           <p className="text-gray-700 mt-2">
             Meet the Visionaries Behind CJ8 Designs
           </p>
           <p className="text-gray-700 mt-2">
-            Our team of dedicated professionals brings a wealth of experience and creativity to every project.
+            Our team of dedicated professionals brings a wealth of experience
+            and creativity to every project.
           </p>
         </div>
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center mt-8">
           <div className="bg-white p-6 rounded-lg shadow-lg">
+            <Image
+              src="/generic_person.jpg"
+              alt="James Carter"
+              width={96}
+              height={96}
+              className="w-24 h-24 mx-auto rounded-full mb-4"
+            />
             <h4 className="text-xl font-bold text-gray-900">James Carter</h4>
             <p className="text-gray-700">Founder & CEO</p>
             <p className="text-gray-700">New York, USA</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
+            <Image
+              src="/generic_person.jpg"
+              alt="Emily Zhang"
+              width={96}
+              height={96}
+              className="w-24 h-24 mx-auto rounded-full mb-4"
+            />
             <h4 className="text-xl font-bold text-gray-900">Emily Zhang</h4>
             <p className="text-gray-700">Creative Director</p>
             <p className="text-gray-700">San Francisco, USA</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
+            <Image
+              src="/generic_person.jpg"
+              alt="Michael Brown"
+              width={96}
+              height={96}
+              className="w-24 h-24 mx-auto rounded-full mb-4"
+            />
             <h4 className="text-xl font-bold text-gray-900">Michael Brown</h4>
             <p className="text-gray-700">Senior UX Designer</p>
             <p className="text-gray-700">London, UK</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
+            <Image
+              src="/generic_person.jpg"
+              alt="Laura Smith"
+              width={96}
+              height={96}
+              className="w-24 h-24 mx-auto rounded-full mb-4"
+            />
             <h4 className="text-xl font-bold text-gray-900">Laura Smith</h4>
             <p className="text-gray-700">Marketing Strategist</p>
             <p className="text-gray-700">Toronto, Canada</p>
@@ -83,26 +126,52 @@ export default function AboutPage() {
       <section className="bg-white py-16 px-4">
         <h2 className="text-2xl font-bold text-center mb-8">Our Expertise</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto text-center">
-          <ExpertiseCard icon={<FaBullseye />} title="Brand Strategy" description="Strategies aligning with business goals and market trends." />
-          <ExpertiseCard icon={<FaPalette />} title="User Experience Design" description="Seamless and intuitive user journeys." />
-          <ExpertiseCard icon={<FaCogs />} title="Visual Design" description="Visually stunning and impactful designs." />
-          <ExpertiseCard icon={<FaLaptopCode />} title="Digital Innovation" description="Cutting-edge technologies driving innovation." />
-          <ExpertiseCard icon={<FaProjectDiagram />} title="Project Management" description="Timely and efficient project delivery." />
-          <ExpertiseCard icon={<FaHandshake />} title="Client Collaboration" description="Working closely with clients to achieve their vision." />
+          <ExpertiseCard
+            icon={<FaBullseye />}
+            title="Brand Strategy"
+            description="Strategies aligning with business goals and market trends."
+          />
+          <ExpertiseCard
+            icon={<FaPalette />}
+            title="User Experience Design"
+            description="Seamless and intuitive user journeys."
+          />
+          <ExpertiseCard
+            icon={<FaCogs />}
+            title="Visual Design"
+            description="Visually stunning and impactful designs."
+          />
+          <ExpertiseCard
+            icon={<FaLaptopCode />}
+            title="Digital Innovation"
+            description="Cutting-edge technologies driving innovation."
+          />
+          <ExpertiseCard
+            icon={<FaProjectDiagram />}
+            title="Project Management"
+            description="Timely and efficient project delivery."
+          />
+          <ExpertiseCard
+            icon={<FaHandshake />}
+            title="Client Collaboration"
+            description="Working closely with clients to achieve their vision."
+          />
         </div>
       </section>
 
       <section className="bg-gray-100 py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl font-bold text-gray-900">Innovate. Transform. Excel.</h3>
+          <h3 className="text-2xl font-bold text-gray-900">
+            Innovate. Transform. Excel.
+          </h3>
+          <p className="text-gray-700 mt-2">Driving Success Through Design</p>
           <p className="text-gray-700 mt-2">
-            Driving Success Through Design
+            At CJ8 Designs, we are dedicated to delivering design solutions that
+            drive measurable success for our clients.
           </p>
           <p className="text-gray-700 mt-2">
-            At CJ8 Designs, we are dedicated to delivering design solutions that drive measurable success for our clients.
-          </p>
-          <p className="text-gray-700 mt-2">
-            Our approach combines creativity with data-driven insights to ensure your brand stands out in a competitive market.
+            Our approach combines creativity with data-driven insights to ensure
+            your brand stands out in a competitive market.
           </p>
         </div>
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center mt-8">
@@ -115,9 +184,12 @@ export default function AboutPage() {
 
       <section className="bg-white py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl font-bold text-gray-900">Trusted by Leading Brands</h3>
+          <h3 className="text-2xl font-bold text-gray-900">
+            Trusted by Leading Brands
+          </h3>
           <p className="text-gray-700 mt-2">
-            We collaborate with innovative brands worldwide to deliver exceptional design solutions.
+            We collaborate with innovative brands worldwide to deliver
+            exceptional design solutions.
           </p>
         </div>
       </section>
@@ -129,13 +201,25 @@ export default function AboutPage() {
             Let’s Create Something Extraordinary
           </p>
           <p className="text-gray-700 mt-2">
-            At CJ8 Designs, we’re passionate about turning your ideas into impactful designs. Reach out to us today.
+            At CJ8 Designs, we’re passionate about turning your ideas into
+            impactful designs. Reach out to us today.
           </p>
           <div className="mt-4 space-y-2">
-            <p className="text-gray-700"><strong>Collaborate:</strong> collaborate@cj8designs.com | +1 (555) 123-4567</p>
-            <p className="text-gray-700"><strong>Press:</strong> press@cj8designs.com | +1 (555) 123-4568</p>
-            <p className="text-gray-700"><strong>Careers:</strong> careers@cj8designs.com | +1 (555) 123-4569</p>
-            <p className="text-gray-700"><strong>General Inquiry:</strong> hello@cj8designs.com | +1 (555) 123-4570</p>
+            <p className="text-gray-700">
+              <strong>Collaborate:</strong> collaborate@cj8designs.com | +1
+              (555) 123-4567
+            </p>
+            <p className="text-gray-700">
+              <strong>Press:</strong> press@cj8designs.com | +1 (555) 123-4568
+            </p>
+            <p className="text-gray-700">
+              <strong>Careers:</strong> careers@cj8designs.com | +1 (555)
+              123-4569
+            </p>
+            <p className="text-gray-700">
+              <strong>General Inquiry:</strong> hello@cj8designs.com | +1 (555)
+              123-4570
+            </p>
           </div>
         </div>
       </section>
@@ -158,7 +242,7 @@ function MetricCard({ title, value }) {
 
   useEffect(() => {
     let start = 0;
-    const end = parseInt(value.replace(/\D/g, ''));
+    const end = parseInt(value.replace(/\D/g, ""));
     if (start === end) return;
 
     const totalDuration = 500;
@@ -173,7 +257,10 @@ function MetricCard({ title, value }) {
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-      <h3 className="text-4xl font-bold text-blue-600">{count}{value.replace(/\d/g, '')}</h3>
+      <h3 className="text-4xl font-bold text-blue-600">
+        {count}
+        {value.replace(/\d/g, "")}
+      </h3>
       <p className="text-gray-600 mt-2">{title}</p>
     </div>
   );
