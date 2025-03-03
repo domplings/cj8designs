@@ -161,10 +161,10 @@ function MetricCard({ title, value }) {
     const end = parseInt(value.replace(/\D/g, ''));
     if (start === end) return;
 
-    let totalDuration = 500;
-    let incrementTime = (totalDuration / end) * 2;
+    const totalDuration = 500;
+    const incrementTime = (totalDuration / end) * 2;
 
-    let timer = setInterval(() => {
+    const timer = setInterval(() => {
       start += 1;
       setCount(start);
       if (start === end) clearInterval(timer);
