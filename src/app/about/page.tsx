@@ -36,7 +36,10 @@ export default function AboutPage() {
 
       <section className="bg-white py-16 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          <MetricCard title="Founded" value="2018" />
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h3 className="text-4xl font-bold text-blue-600">2018</h3>
+            <p className="text-gray-600 mt-2">Founded</p>
+          </div>
           <MetricCard title="Projects Completed" value="200+" />
           <MetricCard title="Global Clients" value="50+" />
           <MetricCard title="Awards Won" value="25" />
@@ -158,7 +161,7 @@ function MetricCard({ title, value }) {
     const end = parseInt(value.replace(/\D/g, ''));
     if (start === end) return;
 
-    let totalDuration = 2000;
+    let totalDuration = 500;
     let incrementTime = (totalDuration / end) * 2;
 
     let timer = setInterval(() => {
