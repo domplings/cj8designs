@@ -8,7 +8,6 @@ import developmentIcon from '../../public/development-icon.svg';
 export default function HomePage() {
   return (
     <main>
-
       {/* HERO SECTION */}
       <section className="flex items-center justify-between gap-8 py-16 px-8 bg-white">
         {/* LEFT COLUMN */}
@@ -89,7 +88,6 @@ export default function HomePage() {
           Get in Touch
         </a>
       </section>
-
     </main>
   );
 }
