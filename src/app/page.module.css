@@ -1,0 +1,188 @@
+/* src/app/page.module.css */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #fff;
+  }
+  
+  .heroText {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .subtitle {
+    color: #0070f3;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  
+  .keywords {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* For anchor usage */
+    display: inline-block; /* For anchor usage */
+  }
+  
+  .primaryButton {
+    background-color: #0070f3;
+    color: #fff;
+  }
+  
+  .primaryButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .secondaryButton {
+    background-color: transparent;
+    color: #0070f3;
+    border: 2px solid #0070f3;
+  }
+  
+  .secondaryButton:hover {
+    background-color: #0070f3;
+    color: #fff;
+  }
+  
+  .heroImage {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .serviceTags {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-top-right-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .serviceTags p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  
+  /* Core Services Section */
+.coreServices {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.serviceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.serviceCard {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.serviceCard:hover {
+    transform: translateY(-5px);
+}
+
+.serviceCard h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.25rem;
+    color: #0070f3;
+}
+
+.serviceCard p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Call to Action Section */
+.ctaSection {
+    padding: 4rem 2rem;
+    background-color: #0070f3;
+    color: #fff;
+    text-align: center;
+}
+
+.ctaDescription {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+/* Custom CTA Button */
+.ctaButton {
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    background-color: #fff;
+    color: #0070f3;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #005bb5;
+    color: #fff;
+}
+
+.servicesPage {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem 2rem;
+}
+
+/* Shared section title */
+.sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
